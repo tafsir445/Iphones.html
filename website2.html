@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA 1 - iPhone Giveaway Free</title>
+    <meta name="description" content="Win Free iPhone 17 & 16 - USA Exclusive Offer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            min-height: 100vh;
+            padding: 10px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .header h1 {
+            color: #007AFF;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .offer-banner {
+            background: linear-gradient(135deg, #FF2D55 0%, #FF375F 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 15px;
+            border: 2px solid #FFD700;
+        }
+        
+        .offer-banner h2 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #32D74B 0%, #30D158 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            border: 2px solid #FFD700;
+        }
+
+        .info-box p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .registration-steps {
+            margin-bottom: 15px;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .step-box {
+            padding: 12px 8px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid;
+            font-weight: bold;
+        }
+
+        .step-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .step-1 {
+            background: linear-gradient(135deg, #FF6B6B 0%, #EE5A24 100%);
+            color: white;
+            border-color: #FFD700;
+        }
+        
+        .step-2 {
+            background: linear-gradient(135deg, #00D2FF 0%, #3A7BD5 100%);
+            color: white;
+            border-color: #FFD700;
+        }
+        
+        .step-3 {
+            background: linear-gradient(135deg, #32D74B 0%, #30D158 100%);
+            color: white;
+            border-color: #FFD700;
+        }
+        
+        .step-number {
+            font-size: 1.1em;
+            margin-bottom: 3px;
+        }
+        
+        .step-text {
+            font-size: 0.8em;
+        }
+
+        .verification-section {
+            background: linear-gradient(135deg, #BF5AF2 0%, #FF375F 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .verification-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .verification-status {
+            background: rgba(255,255,255,0.2);
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .completed {
+            color: #32D74B;
+            font-weight: bold;
+        }
+
+        .pending {
+            color: #FFD60A;
+        }
+
+        .share-section {
+            background: linear-gradient(135deg, #FF9F0A 0%, #FFD60A 100%);
+            color: #333;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            border: 2px solid #007AFF;
+        }
+
+        .share-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .share-btn {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .image-item {
+            background: white;
+            border-radius: 8px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid #ddd;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        
+        .image-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            border-color: #007AFF;
+        }
+        
+        .image-preview {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Bottom Ads Section */
+        .bottom-ads-section {
+            margin: 20px 0 0 0;
+            padding: 10px;
+        }
+
+        .bottom-ads-label {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .bottom-ads-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .bottom-ad-item {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            overflow: hidden;
+        }
+        
+        /* Fix ad size */
+        .ad-container-fix {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ad-container-fix iframe,
+        .ad-container-fix div {
+            max-width: 100% !important;
+            max-height: 100px !important;
+        }
+        
+        /* Banner Ad */
+        .banner-ad {
+            width: 100%;
+            height: 60px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .steps-grid {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .bottom-ads-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇺🇸 United States - iPhone Giveaway</h1>
+            <p>Win iPhone 17 Pro- Limited Time</p>
+        </div>
+        
+        <!-- Banner Ad -->
+        <div class="banner-ad">
+            <script type="text/javascript"> 
+                atOptions = { 
+                    'key' : '532983aee76049003af59d0a6eb1899a', 
+                    'format' : 'iframe', 
+                    'height' : 50, 
+                    'width' : 320, 
+                    'params' : {} 
+                }; 
+            </script> 
+            <script type="text/javascript" src="//www.highperformanceformat.com/532983aee76049003af59d0a6eb1899a/invoke.js"></script>
+        </div>
+        
+        <div class="offer-banner">
+            <h2>🚨 200 iPhones Giveaway 🚨</h2>
+            <p style="font-size: 0.8em;">Offer Ends: 8th November</p>
+        </div>
+
+        <div class="info-box">
+            <p>🎯 Faster Registration = Higher Winning Chance</p>
+            <p>📱 Total 200 iPhones for Giveaway</p>
+            <p>⚡ Complete 3 Registrations Quickly</p>
+        </div>
+
+        <div class="registration-steps">
+            <div class="steps-grid">
+                <div class="step-box step-1" onclick="completeStep(1)">
+                    <div class="step-number">📝 1</div>
+                    <div class="step-text">Register 1</div>
+                </div>
+                <div class="step-box step-2" onclick="completeStep(2)">
+                    <div class="step-number">📋 2</div>
+                    <div class="step-text">Register 2</div>
+                </div>
+                <div class="step-box step-3" onclick="completeStep(3)">
+                    <div class="step-number">✅ 3</div>
+                    <div class="step-text">Register 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="verification-section">
+            <div class="verification-title">✅ Registration Verification</div>
+            <div class="verification-status" id="step1Status">📝 Step 1: <span class="pending">Click to Register</span></div>
+            <div class="verification-status" id="step2Status">📋 Step 2: <span class="pending">Click to Register</span></div>
+            <div class="verification-status" id="step3Status">✅ Step 3: <span class="pending">Click to Register</span></div>
+        </div>
+
+        <div class="share-section">
+            <div class="share-title">📢 Share with Friends</div>
+            <p style="font-size: 0.8em; margin-bottom: 8px;">Share this offer to increase your winning chance!</p>
+            <button class="share-btn" onclick="shareOnFacebook()">📘 Facebook</button>
+            <button class="share-btn" onclick="shareOnWhatsApp()">📱 WhatsApp</button>
+            <button class="share-btn" onclick="shareOnTwitter()">🐦 Twitter</button>
+        </div>
+        
+        <div class="image-grid">
+            <div class="image-item" onclick="completeStep(1)">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692846359313" alt="iPhone 17" class="image-preview">
+            </div>
+            <div class="image-item" onclick="completeStep(2)">
+                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-bluetitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692846359313" alt="iPhone 16" class="image-preview">
+            </div>
+        </div>
+
+        <!-- Bottom Ads Section -->
+        <div class="bottom-ads-section">
+            <div class="bottom-ads-label">Get now </div>
+            <div class="bottom-ads-container">
+                <div class="bottom-ad-item">
+                    <div class="ad-container-fix">
+                        <script async="async" data-cfasync="false" src="//pl27909041.effectivegatecpm.com/d6c937077e7cbad37275dfff7c305012/invoke.js"></script>
+                        <div id="container-d6c937077e7cbad37275dfff7c305012"></div>
+                    </div>
+                </div>
+                <div class="bottom-ad-item">
+                    <div class="ad-container-fix">
+                        <script async="async" data-cfasync="false" src="//pl27909041.effectivegatecpm.com/d6c937077e7cbad37275dfff7c305012/invoke.js"></script>
+                        <div id="container-d6c937077e7cbad37275dfff7c305012"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Registration URLs
+        const registrationUrls = [
+            "https://www.effectivegatecpm.com/zw2ybm9u?key=5f40bad37ae0f356b6791fbb921c1b5a",
+            "https://www.effectivegatecpm.com/ryx7tt1r1?key=4bae5df6cb46e2648761b4d0ea45efe1",
+            "https://www.effectivegatecpm.com/mtrip7p5?key=ce818a1c394bc9bbc635bdff8f8edb67"
+        ];
+
+        function completeStep(stepNumber) {
+            // Open registration URL
+            window.open(registrationUrls[stepNumber - 1], '_blank');
+            
+            // INSTANTLY show completed status
+            const statusElement = document.getElementById(`step${stepNumber}Status`);
+            const statusSpan = statusElement.querySelector('span');
+            statusSpan.textContent = "Completed ✅";
+            statusSpan.className = "completed";
+            
+            // Show completion message
+            setTimeout(() => {
+                alert(`✅ Registration ${stepNumber} completed! Your entry has been recorded.`);
+            }, 500);
+        }
+
+        // Share functions
+        function shareOnFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent("🎁 Win Free iPhone! 50 iPhones Giveaway - Limited Time Offer! 🚀");
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank');
+        }
+
+        function shareOnWhatsApp() {
+            const text = encodeURIComponent("🎁 Win Free iPhone! 50 iPhones Giveaway - Limited Time Offer! Check this: " + window.location.href);
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+
+        function shareOnTwitter() {
+            const text = encodeURIComponent("🎁 Win Free iPhone! 50 iPhones Giveaway 🚀 #iPhoneGiveaway #FreeiPhone");
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+        }
+
+        // Fix ad sizes after page load
+        window.addEventListener('load', function() {
+            console.log('Page loaded - ads should be properly sized');
+            
+            // Additional fix for ad sizes
+            const adContainers = document.querySelectorAll('.ad-container-fix');
+            adContainers.forEach(container => {
+                // Find iframes and divs inside and fix their sizes
+                const iframes = container.querySelectorAll('iframe');
+                const divs = container.querySelectorAll('div');
+                
+                iframes.forEach(iframe => {
+                    iframe.style.maxWidth = '100%';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100px';
+                });
+                
+                divs.forEach(div => {
+                    div.style.maxWidth = '100%';
+                    div.style.width = '100%';
+                    div.style.height = '100px';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
